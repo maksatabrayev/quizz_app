@@ -17,9 +17,6 @@ class _QuizzState extends State<Quizz>{
   Widget? currentScreen;
   List<String> selectedAnswers = [];
   
-  _QuizzState(){
-    selectedAnswers = [];
-  }
 
 
   void addAnswer(String newAnswer){
@@ -45,6 +42,7 @@ class _QuizzState extends State<Quizz>{
 
  void restartQuizz(){
   setState(() {
+    selectedAnswers = [];
     currentScreen = StartScreen(changeScreen);
   },);
  }

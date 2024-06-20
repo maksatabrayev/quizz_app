@@ -49,11 +49,9 @@ class ResultsScreen extends StatelessWidget {
             QuestionsSummary(summaryData: summaryData),
             const SizedBox(height: 30),
             TextButton.icon(
-              onPressed: (){
-                SystemNavigator.pop();
-              },
-              label: const Text("Exit", style: TextStyle(color: Colors.white),),
-              icon: const Icon(Icons.exit_to_app, color: Colors.white),
+              onPressed: restartQuizz,
+              label: const Text("Restart", style: TextStyle(color: Colors.white),),
+              icon: const Icon(Icons.restart_alt, color: Colors.white),
               
             ),
           ],
